@@ -1,0 +1,27 @@
+* {
+	margin:0;
+}
+
+body{
+
+	position: relative;
+}
+
+#tsparticles{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+
+.copyright {
+	height: 100%;
+	background-color: #000;
+	color: rgba(226, 240, 248, 0.616);
+	text-align: center;
+	padding: 1px;
+}
