@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/style.css">
 
     </head>
-    <body>
+    <body onload="buttonChecker()">
         <div id="tsparticles"></div>
         <!-- <section id="main"> -->
             <nav class="navbar navbar-dark bg-dark">
@@ -33,12 +33,12 @@
             <div class="container my-3">
                 <div class="input-group input-group-lg">
                     <span class="input-group-text"><span class="material-icons">quiz</span>&nbspQuestion</span>
-                    <input type="text" value="" id="word1" class="form-control">
-                    <input type="text" value="" id="word2" class="form-control">
+                    <input type="text" value="" id="word1" class="form-control" placeholder="e.g.: SEND">
+                    <input type="text" value="" id="word2" class="form-control" placeholder="e.g.: MORE">
                 </div>
                 <div class="input-group input-group-lg mb-3 mt-3">
                     <span class="input-group-text" ><i class="material-icons">help</i>&nbspAnswer</span>
-                    <input type="text" class="form-control" id="word3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <input type="text" class="form-control" id="word3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  placeholder="e.g.: MONEY">
                 </div>
                 <div class="input-group input-group-lg mb-3">
                     <label class="input-group-text" for="inputGroupSelect01"><span class="material-icons">api</span>&nbspOperations</label>
@@ -51,7 +51,7 @@
                     </select>
                 </div>
                 <button type="button" onclick="calc()" class="btn btn-lg btn-outline-success me-3" style="position: relative;"><span class="material-icons">publish</span>&nbspSolve</button>
-                <button type="button" onclick="resetting()" class="btn btn-lg btn-outline-dark" style="position: relative"><span class="material-icons">restart_alt</span>&nbspReset</button>         
+                <button type="button" onclick="resetting()" class="btn btn-lg btn-outline-dark" id="re" style="position: relative" disabled="true"><span class="material-icons">restart_alt</span>&nbspReset</button>         
                 <div class="container mt-3">
                     <h1 class="display-3"><b>Answers</b></h1>
                     <div class="form-floating">

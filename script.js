@@ -1,5 +1,14 @@
 "use strict";
 
+function buttonChecker(){
+	console.log(document.querySelectorAll('input'));
+	document.querySelectorAll('input').forEach(item => {
+		item.addEventListener('change', event => {
+			document.getElementById('re').disabled = false;
+		})
+	});
+}
+
 function calc(){
 	let timeout=10000; //timeout of 10 seconds for the search
 	
@@ -8,13 +17,17 @@ function calc(){
 	let word3=document.getElementById("word3").value;
 	let operator = document.querySelector("#operations").value;
 	
+
     let flag = fieldChecker(word1, word2, word3, operator);
     if(!flag){
         return;
     }
 
+
 	flag = operationChecker(word1, word2, word3, operator);
 	if(!flag) return;
+
+	// document.getElementById('re').disabled = false;
 
 	clearResultText(); //clear past result if any
 	
