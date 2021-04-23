@@ -19,6 +19,7 @@ function calc(){
 	clearResultText(); //clear past result if any
 	
 	var worker=new Worker("worker.js");
+
 	worker.postMessage([word1,word2,word3,operator,timeout]);
 	
 	worker.onmessage=function(e){

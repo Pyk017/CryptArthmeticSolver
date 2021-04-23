@@ -8,9 +8,9 @@
 ![crypt_example_image](/images/ex1.png)
 
 ## Application
-![crypt_sample_image](/images/crypt.jpg)
+![crypt_sample_image](/images/crypt.png)
 
 Input two operands and select operator from the select list, and click on **Solve** to get the desired combination as output.
 
 ### Sample Input/Output :smiley:
-![crypt_sample_image](/images/crypt2.jpg)
+![crypt_sample_image](/images/crypt1.png)
